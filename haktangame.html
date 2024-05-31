@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberation Front</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="haktan-game" >
+    <header>
+        <a href="index.html">
+            <img src="LogoPNG.png">
+        </a>
+    
+        <nav>
+            <h1>Liberation Front </h1>
+            <div class="dropdown">
+                <a class="dropdown-toggle" id="telmo-toggle" onclick="toggleContent('telmo-content')">Telmo &#9662</a>
+                <ul class="dropdown-content" id="telmo-content"> <a class="dropdownItem" href="telmo.html">Portfolio</a>
+
+                    <a class="dropdownItem" href="telmoGoedeDoel.html">Goede Doel</a>
+                    <a class="dropdownItem" href="telmogame.html">Donate to Play</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle" id="koen-toggle" onclick="toggleContent('koen-content')">Koen &#9662</a>
+                <ul class="dropdown-content" id="koen-content"> <a class="dropdownItem" href="">Portfolio</a>
+
+                    <a class="dropdownItem" href="">Goede Doel</a>
+                    <a class="dropdownItem" href="">Donate to Play</a>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <a class="dropdown-toggle" id="haktan-toggle" onclick="toggleContent('haktan-content')">Haktan &#9662</a>
+                <ul class="dropdown-content" id="haktan-content"> <a class="dropdownItem" href="haktan.html">Portfolio</a>
+
+                    <a class="dropdownItem" href="haktanGoedeDoel.html">Goede Doel</a>
+                    <a class="dropdownItem" href="haktangame.html">Donate to Play</a>
+                </ul>
+            </div>
+        </nav>
+    
+    </header class="header-car" >
+    <main>
+        
+            <img onclick="explodeCar()" id="car" src="./img/car_green.png" style="cursor: pointer;" >
+            <img onclick="explodeCar2()" id="car2" src="./img/car_red.png" >
+            <img onclick="explodeCar3()" id="car3" src="./img/car_blue.png" >
+            <img onclick="explodeCar4()" id="car4" src="img/fire.png" >
+
+
+            <audio id="clickSound" src="sounds/Boom_sound_effect.mp3"></audio>
+
+            <section class="container" >
+                <button onclick="start()" id="begin" >Start</button>
+                <button onclick="time()" id="time">Time it</button>
+                <button onclick="stop()" id="begin" >Pauze</button>
+                <h2>Time Left:</h2>
+                <h2 id="time-left">60</h2>
+            </section>
+           
+        </main>
+    
+    <script src="haktanGame.js"></script>
+</body>
+</html>

@@ -1,0 +1,401 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+}
+
+main {
+  padding-top: 10vh;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: linear-gradient(
+    270deg,
+    rgb(255, 255, 255),
+    rgb(133, 133, 133)
+  );
+  width: 100vw;
+  height: 10vh;
+  font-size: 3vh;
+  text-decoration: none;
+  z-index: 2;
+}
+
+header img {
+  width: 8vh;
+  height: 8vh;
+  margin: 1vh;
+}
+
+nav {
+  position: relative;
+  width: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover {
+  color: rgb(113, 7, 7);
+}
+
+/* Home Page*/
+.homepage__section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  align-items: center;
+}
+
+.homepage__section h1 {
+  margin-top: 10vh;
+}
+
+.fulllist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.indexli ul {
+  list-style-type: none;
+}
+
+.square {
+  text-align: center;
+  border-style: solid;
+  padding: 5rem;
+  margin: 0 5vw;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  border-color: black;
+}
+
+.indexli a {
+  text-decoration: none;
+  color: white;
+}
+
+/* navbar dropdown menu */
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lightgrey;
+  width: 8vw;
+  z-index: 1;
+  flex-direction: column;
+  transition: opacity 500ms ease-in-out;
+}
+
+.dropdown-content a {
+  display: flex;
+  color: black;
+  text-align: left;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.dropdown:hover .dropdown-toggle {
+  display: flex;
+  color: darkred;
+  transition: 0.3s;
+}
+
+.dropdownItem:hover {
+  background-color: rgb(204, 0, 0);
+  transition: 0.3s;
+  color: white;
+}
+
+/*navbar submenu haktan */
+
+.submenu-haktan {
+  display: block;
+  position: absolute;
+  background-color: #949393;
+  padding: 10px;
+  margin-top: 20vh;
+  margin-left: 45vh;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.submenu-haktan {
+  margin-top: 20vh;
+}
+
+.submenu-haktan a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu-trigger-haktan:hover + .submenu-haktan,
+.submenu-haktan:hover {
+  display: block;
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  background-color: #5c5b5b;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  gap: 2rem;
+}
+
+footer img {
+  width: 4rem;
+}
+
+/* Telmo Goede Doel pagina */
+
+.telmoGDMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.telmoGDMain h1 {
+  text-align: center;
+}
+
+.telmoGDMain p {
+  padding-bottom: 1rem;
+}
+
+/*Koen CSS*/
+.koen {
+  margin-left: 5vw;
+  justify-items: center;
+  justify-self: center;
+}
+.koen * {
+  margin: 1vw;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 25vw;
+  justify-content: space-around;
+}
+
+/* Haktan Goede Doel Pagina*/
+
+.HaktanMain{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 7rem;
+}
+
+.HaktanMain h1 {
+  text-align: center;
+}
+
+.HaktanMain p {
+  padding-bottom: 1rem;
+}
+
+/* Haktan Pagina */
+
+.mainHaktanPortfolio h1,
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.haktanCV {
+  display: flex;
+  width: 100vw;
+  gap: 2rem;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.haktanBtn {
+  padding: 0.8rem;
+}
+
+
+.resultsBtn {
+  display: flex;
+  width: 100vw;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+  align-items: center;
+}
+
+.resultsBtn ul {
+  list-style-type: none;
+}
+
+.programExp {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Home Page*/
+.homepage__section {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  text-align: center;
+  align-items: center;
+}
+
+.homepage__section h1 {
+  margin-top: 10vh;
+}
+
+.fulllist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.indexli ul {
+  list-style-type: none;
+}
+
+.square {
+  text-align: center;
+  border-style: solid;
+  padding: 5rem;
+  margin: 0 5vw;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  border-color: black;
+}
+
+.indexli a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Haktan Game*/
+* {
+  margin: 0;
+  padding: 0;
+}
+.haktan-game{
+  background-image: url(./img/background.png);
+}
+
+header-car {
+  padding-bottom: 1rem;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 82.5rem;
+  top: 5rem;
+  padding: 1rem;
+}
+
+/*De auto's */
+
+#car {
+  position: absolute;
+  left: 650px;
+  top: 550px;
+  width: 40px;
+  height: 80px;
+
+  user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#car2 {
+  position: absolute;
+  left: 575px;
+  top: 280px;
+  width: 40px;
+  height: 80px;
+
+  user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#car3 {
+  position: absolute;
+  left: 800px;
+  top: 380px;
+  width: 80px;
+  height: 40px;
+
+  user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#car4 {
+  position: absolute;
+  left: 400px;
+  top: 420px;
+  width: 100px;
+  height: 90px;
+
+  user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.begin {
+  display: flex;
+  justify-content: right;
+}
